@@ -4,7 +4,7 @@ body {
     font-size: 18px;
 }
 
-p {
+.para {
     color: white;
     background-color: black;
     font-size: 20px;
@@ -30,6 +30,4 @@ button {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.arrow {
-    background-color: white;
-}
+
