@@ -29,3 +29,7 @@ button {
     color: white;
     font-family: 'Courier New', Courier, monospace;
 }
+
+.arrow {
+    background-color: white;
+}
