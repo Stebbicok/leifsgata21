@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <title>Leifsgata 21</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div><!--Main div for the title and image-->
+            <p>Leifsgata 21</p>
+            <img id="image" src="" alt="Documentation of an appartment">
+        </div>
+        <footer><!--Footer to list the participants-->
+            <div>Participants   /</div>
+            <div>A   n   n   a   /</div>
+            <div>A   r   i   /</div>
+            <div>G   u   ð   n   i   /</div>
+            <div>J   a   k   o   b   /</div>
+            <div>U   n   n   a   r   /</div>
+        </footer>
+        <!--Button to reload the page-->
+        <button>/reload/</button>
+        <!--Audio tag to play parts of interviews with the participants-->
+    </body>
+    <!--Main Javascript-->
+    <script type="text/javascript">
+        //Function to find random numbers
+        function between(min, max) {  
+            return Math.floor(Math.random() * (max - min) + min);
+        }
+        //List of files to interact with the random function
+        var images = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg", "img6.jpg", "img7.jpg", "img8.jpg", "img9.jpg", "img10.jpg", "img11.jpg", "img12.jpg", "img13.jpg", "img14.jpg", "img15.jpg", "img16.jpg", "img17.jpg", "img18.jpg", "img19.jpg", "img20.jpg", "img21.jpg", "img22.jpg", "img23.jpg", "img24.jpg", "img25.jpg", "img26.jpg", "img27.jpg", "img28.jpg", "img29.jpg", "img30.jpg", "img31.jpg", "img32.jpg", "img33.jpg", "img34.jpg", "img35.jpg", "img36.jpg", "img37.jpg", "img38.jpg", "img39.jpg", "img40.jpg", "img41.jpg", "img42.jpg", "img43.jpg", "img44.jpg", "img45.jpg", "img46.jpg", "img47.jpg", "img48.jpg", "img49.jpg", "img50.jpg"]
+        var imagesHorizontal = ["img17.jpg", "img30.jpg", "img32.jpg", "img34.jpg", "img35.jpg", "img37.jpg", "img38.jpg", "img40.jpg", "img41.jpg", "img44.jpg", "img45.jpg", "img46.jpg", "img47.jpg", "img50.jpg"]
+        var audio = ['1.m4a', '10.m4a', '100.m4a', '101.m4a', '102.m4a', '103.m4a', '104.m4a', '105.m4a', '106.m4a', '107.m4a', '108.m4a', '109.m4a', '11.m4a', '110.m4a', '111.m4a', '112.m4a', '113.m4a', '114.m4a', '115.m4a', '116.m4a', '117.m4a', '118.m4a', '119.m4a', '12.m4a', '120.m4a', '121.m4a', '122.m4a', '123.m4a', '124.m4a', '125.m4a', '126.m4a', '127.m4a', '128.m4a', '129.m4a', '13.m4a', '130.m4a', '131.m4a', '132.m4a', '133.m4a', '134.m4a', '135.m4a', '136.m4a', '137.m4a', '138.m4a', '139.m4a', '14.m4a', '140.m4a', '141.m4a', '142.m4a', '143.m4a', '144.m4a', '145.m4a', '146.m4a', '147.m4a', '148.m4a', '149.m4a', '15.m4a', '150.m4a', '151.m4a', '152.m4a', '153.m4a', '154.m4a', '155.m4a', '156.m4a', '157.m4a', '158.m4a', '159.m4a', '16.m4a', '160.m4a', '161.m4a', '162.m4a', '163.m4a', '164.m4a', '165.m4a', '166.m4a', '167.m4a', '168.m4a', '169.m4a', '17.m4a', '170.m4a', '171.m4a', '172.m4a', '173.m4a', '174.m4a', '175.m4a', '176.m4a', '177.m4a', '178.m4a', '179.m4a', '18.m4a', '180.m4a', '181.m4a', '182.m4a', '183.m4a', '184.m4a', '185.m4a', '186.m4a', '187.m4a', '188.m4a', '189.m4a', '19.m4a', '190.m4a', '191.m4a', '192.m4a', '193.m4a', '194.m4a', '195.m4a', '196.m4a', '197.m4a', '198.m4a', '199.m4a', '2.m4a', '20.m4a', '200.m4a', '201.m4a', '202.m4a', '203.m4a', '204.m4a', '205.m4a', '206.m4a', '207.m4a', '208.m4a', '209.m4a', '21.m4a', '210.m4a', '211.m4a', '212.m4a', '213.m4a', '214.m4a', '215.m4a', '216.m4a', '217.m4a', '218.m4a', '219.m4a', '22.m4a', '220.m4a', '221.m4a', '222.m4a', '223.m4a', '224.m4a', '225.m4a', '226.m4a', '227.m4a', '228.m4a', '229.m4a', '23.m4a', '230.m4a', '231.m4a', '232.m4a', '233.m4a', '234.m4a', '235.m4a', '236.m4a', '237.m4a', '238.m4a', '239.m4a', '24.m4a', '240.m4a', '241.m4a', '242.m4a', '243.m4a', '244.m4a', '245.m4a', '246.m4a', '247.m4a', '248.m4a', '249.m4a', '25.m4a', '250.m4a', '251.m4a', '252.m4a', '253.m4a', '254.m4a', '255.m4a', '256.m4a', '257.m4a', '258.m4a', '259.m4a', '26.m4a', '260.m4a', '261.m4a', '262.m4a', '263.m4a', '264.m4a', '265.m4a', '267.m4a', '268.m4a', '269.m4a', '27.m4a', '270.m4a', '271.m4a', '272.m4a', '273.m4a', '274.m4a', '275.m4a', '276.m4a', '277.m4a', '278.m4a', '279.m4a', '28.m4a', '280.m4a', '281.m4a', '282.m4a', '283.m4a', '285.m4a', '29.m4a', '3.m4a', '30.m4a', '31.m4a', '32.m4a', '33.m4a', '34.m4a', '35.m4a', '36.m4a', '37.m4a', '38.m4a', '39.m4a', '4.m4a', '40.m4a', '41.m4a', '42.m4a', '43.m4a', '44.m4a', '45.m4a', '46.m4a', '47.m4a', '48.m4a', '49.m4a', '5.m4a', '50.m4a', '51.m4a', '52.m4a', '53.m4a', '54.m4a', '55.m4a', '56.m4a', '57.m4a', '58.m4a', '59.m4a', '6.m4a', '60.m4a', '61.m4a', '62.m4a', '63.m4a', '64.m4a', '65.m4a', '66.m4a', '67.m4a', '68.m4a', '69.m4a', '7.m4a', '70.m4a', '71.m4a', '72.m4a', '73.m4a', '74.m4a', '75.m4a', '76.m4a', '77.m4a', '78.m4a', '79.m4a', '8.m4a', '80.m4a', '81.m4a', '82.m4a', '83.m4a', '84.m4a', '85.m4a', '86.m4a', '87.m4a', '88.m4a', '89.m4a', '9.m4a', '90.m4a', '91.m4a', '92.m4a', '93.m4a', '94.m4a', '95.m4a', '96.m4a', '97.m4a', '98.m4a', '99.m4a']
+        //Code that will make a random image from the images list replace the old one
+        var randomNumber = between(0, images.length);
+        var randomImage = images[randomNumber];
+        console.log(randomImage);
+        var imageElement = document.getElementById("image");
+        imageElement.src = "img/" + randomImage;
+        //Similar attempt at making the audio play like a playlist
+        var randomAudio = audio[between(0, audio.length)];
+        var audioFile = new Audio("audio/" + randomAudio);
+        audioFile.play();
+    </script>
+</html>
